@@ -487,6 +487,9 @@ img {
 /* =========================
    TECHNICAL BACKGROUND
 ========================= */
+/* =========================
+   TECHNICAL BACKGROUND
+========================= */
 
 .standards,
 #about,
@@ -496,46 +499,50 @@ img {
     isolation: isolate;
 }
 
-/* Engineering / CAD drawing watermark */
 .standards::after,
 #about::after,
 .meaning::after {
     content: "";
     position: absolute;
-
     top: 0;
     right: 0;
-    bottom: 0;
 
-    width: 620px;
+    width: 650px;
+    height: 100%;
 
-    background-image:
-        linear-gradient(
-            to right,
-            rgba(255,255,255,1) 0%,
-            rgba(255,255,255,0.75) 18%,
-            rgba(255,255,255,0.25) 40%,
-            rgba(255,255,255,0) 100%
-        ),
-        url("technical-bg.png");
+    background: url("technical-bg.png") right center / cover no-repeat;
 
-    background-position:
-        center,
-        right center;
+    /* Fade gradually from the text area into the drawing */
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(0,0,0,0.20) 15%,
+        rgba(0,0,0,0.55) 35%,
+        rgba(0,0,0,0.85) 60%,
+        #000 100%
+    );
 
-    background-size:
-        cover,
-        cover;
+    mask-image: linear-gradient(
+        to right,
+        transparent 0%,
+        rgba(0,0,0,0.20) 15%,
+        rgba(0,0,0,0.55) 35%,
+        rgba(0,0,0,0.85) 60%,
+        #000 100%
+    );
 
-    background-repeat: no-repeat;
+    opacity: 0.90;
 
-    opacity: 0.85;
+    /* Makes the pale engineering drawing more visible */
+    filter: contrast(1.45);
+
+    /* Allows the pale drawing to interact better with white */
+    mix-blend-mode: multiply;
 
     pointer-events: none;
     z-index: 0;
 }
 
-/* Keep text above background */
 .standards .container,
 #about .container,
 .meaning .container {
