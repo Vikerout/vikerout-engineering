@@ -712,7 +712,7 @@ img {
 }
 
 .footer-brand img {
-    width: 155px;
+    width: 220px;
     height: auto;
     display: block;
 }
@@ -805,7 +805,7 @@ img {
 @media (max-width: 560px) {
 
     .container {
-        width: 88%;
+        width: 180%;
     }
 
     .header {
