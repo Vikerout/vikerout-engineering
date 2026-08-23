@@ -513,8 +513,8 @@ img {
         linear-gradient(
             to right,
             rgba(255,255,255,1) 0%,
-            rgba(255,255,255,0.75) 25%,
-            rgba(255,255,255,0.25) 60%,
+            rgba(255,255,255,0.75) 18%,
+            rgba(255,255,255,0.25) 40%,
             rgba(255,255,255,0) 100%
         ),
         url("technical-bg.png");
@@ -529,7 +529,7 @@ img {
 
     background-repeat: no-repeat;
 
-    opacity: 0.55;
+    opacity: 0.85;
 
     pointer-events: none;
     z-index: 0;
