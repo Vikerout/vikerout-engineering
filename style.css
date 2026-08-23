@@ -274,7 +274,7 @@ img {
             rgba(245, 247, 248, 0.94),
             rgba(245, 247, 248, 0.94)
         ),
-        url("services-bg.jpg") center center / cover no-repeat;
+       url("services-bg.png") center center / cover no-repeat;
 }
 .service-grid {
     display: grid;
