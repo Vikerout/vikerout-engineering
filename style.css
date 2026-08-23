@@ -537,10 +537,9 @@ img {
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: baseline;
-    gap: 16px;
+    gap: 20px;
     padding: 5px 0;
 }
-
 .exp-row b {
     font-size: 15px;
     font-weight: 750;
