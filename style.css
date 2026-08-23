@@ -130,6 +130,7 @@ img {
     color: #ffffff;
     padding: 105px 0;
     max-width: 800px;
+    transform: translateX(-25px);
 }
 
 .eyebrow {
