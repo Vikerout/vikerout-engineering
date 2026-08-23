@@ -36,7 +36,7 @@ img {
 ========================= */
 
 .header {
-    height: 68px;
+    height: 74px;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -60,9 +60,11 @@ img {
 }
 
 .brand img {
-    height:  62px;
-    width: auto;
+    width: 150px;
+    height: auto;
+    max-height: 64px;
     display: block;
+    object-fit: contain;
 }
 
 
