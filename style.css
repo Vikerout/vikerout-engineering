@@ -321,7 +321,7 @@ img {
 
 .industry-list div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.15fr 1fr;
     align-items: center;
     padding: 18px 0;
     border-bottom: 1px solid #dbe2e6;
