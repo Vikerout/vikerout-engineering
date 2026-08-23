@@ -496,31 +496,24 @@ img {
     background: #ffffff;
 }
 
-/* Technical drawing / engineering background */
 .standards::after,
 #about::after,
 .meaning::after {
     content: "";
     position: absolute;
-
     top: 0;
     right: 0;
     bottom: 0;
+    width: 520px;
 
-    width: 620px;
+    background: url("./technical-bg.png") right center / cover no-repeat;
 
-    background-image: url("./technical-bg.png");
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: cover;
-
-    opacity: 0.60;
+    opacity: 0.38;
 
     pointer-events: none;
     z-index: 0;
 }
 
-/* Keep all text above the image */
 .standards .container,
 #about .container,
 .meaning .container {
