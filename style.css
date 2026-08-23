@@ -599,7 +599,29 @@ img {
 ========================= */
 
 .why {
+    position: relative;
+    overflow: hidden;
     background: #f5f7f8;
+}
+
+.why::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45%;
+    height: 100%;
+
+    background: url("why-bg.jpg") right center / cover no-repeat;
+
+    opacity: 0.08;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.why .container {
+    position: relative;
+    z-index: 1;
 }
 
 /* =========================
