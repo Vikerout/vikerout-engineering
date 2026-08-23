@@ -486,73 +486,46 @@ img {
 /* =========================
    TECHNICAL BACKGROUND
 ========================= */
+
 .standards,
 #about,
 .meaning {
     position: relative;
     overflow: hidden;
+    isolation: isolate;
     background: #ffffff;
 }
+
+/* Technical drawing / engineering background */
 .standards::after,
 #about::after,
 .meaning::after {
     content: "";
     position: absolute;
+
     top: 0;
     right: 0;
+    bottom: 0;
 
     width: 620px;
-    height: 100%;
 
-    background-image: url("technical-bg.png");
+    background-image: url("./technical-bg.png");
     background-repeat: no-repeat;
     background-position: right center;
     background-size: cover;
 
-    opacity: 0.35;
+    opacity: 0.60;
+
     pointer-events: none;
     z-index: 0;
 }
+
+/* Keep all text above the image */
 .standards .container,
 #about .container,
 .meaning .container {
     position: relative;
-    z-index: 1;
-}
-/* =========================
-   EXPERIENCE
-========================= */
-
-.experience {
-    background: #ffffff;
-}
-
-.experience-copy {
-    border-top: 1px solid #dce2e6;
-}
-
-.exp-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    padding: 19px 0;
-    border-bottom: 1px solid #dce2e6;
-}
-
-.exp-row b {
-    font-size: 16px;
-    font-weight: 750;
-}
-
-.exp-row span {
-    color: #66737c;
-    font-size: 14px;
-}
-
-.experience-copy > p {
-    color: #66737c;
-    margin-top: 27px;
-    font-size: 14px;
+    z-index: 2;
 }
 
 /* =========================
