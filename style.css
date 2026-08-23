@@ -336,6 +336,33 @@ img {
     font-size: 14px;
     color: #6b7780;
 }
+/* =========================
+   INDUSTRIES BACKGROUND ICON
+========================= */
+
+#industries {
+    position: relative;
+    overflow: hidden;
+}
+
+#industries::after {
+    content: "⚙";
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 360px;
+    line-height: 1;
+    color: #0a638d;
+    opacity: 0.035;
+    pointer-events: none;
+    z-index: 0;
+}
+
+#industries .container {
+    position: relative;
+    z-index: 1;
+}
 
 /* =========================
    CAPABILITIES / WHY
