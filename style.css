@@ -344,15 +344,15 @@ img {
     position: relative;
     overflow: hidden;
 
-       background:
+    background:
         linear-gradient(
             90deg,
-            rgba(245, 247, 248, 1) 0%,
-            rgba(245, 247, 248, 0.96) 45%,
-            rgba(245, 247, 248, 0.72) 72%,
-            rgba(245, 247, 248, 0.35) 100%
+            #f5f7f8 0%,
+            #f5f7f8 48%,
+            rgba(245, 247, 248, 0.94) 68%,
+            rgba(245, 247, 248, 0.55) 100%
         ),
-        url("industries-bg.png") right center / 800px auto no-repeat;
+        url("industries-bg.png") right center / 600px auto no-repeat;
 }
 
 #industries .container {
