@@ -217,11 +217,12 @@ img {
 
 .trust-grid div {
     min-width: 0;
-    padding: 14px 20px;
+    padding: 18px 26px;
     border-right: 1px solid #e2e7ea;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1.35fr;
     align-items: center;
-    gap: 14px;
+    column-gap: 22px;
 }
 .trust-grid div:last-child {
     border-right: 0;
