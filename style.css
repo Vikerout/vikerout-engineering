@@ -601,10 +601,6 @@ img {
         grid-template-columns: 1fr 1fr;
     }
 
-    .trust-grid {
-        grid-template-columns: 1fr 1fr;
-    }
-
     .hero {
         min-height: 620px;
     }
@@ -642,7 +638,6 @@ img {
     .cap-grid,
     .why-grid,
     .process,
-    .trust-grid,
     .software-list,
     .standard-list {
         grid-template-columns: 1fr;
