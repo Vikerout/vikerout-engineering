@@ -487,9 +487,6 @@ img {
 /* =========================
    TECHNICAL BACKGROUND
 ========================= */
-/* =========================
-   TECHNICAL BACKGROUND
-========================= */
 
 .standards,
 #about,
@@ -512,32 +509,32 @@ img {
 
     background: url("technical-bg.png") right center / cover no-repeat;
 
-    /* Fade gradually from the text area into the drawing */
+    /* Keep the drawing visible while fading its left edge */
     -webkit-mask-image: linear-gradient(
         to right,
         transparent 0%,
-        rgba(0,0,0,0.20) 15%,
-        rgba(0,0,0,0.55) 35%,
-        rgba(0,0,0,0.85) 60%,
-        #000 100%
+        rgba(0,0,0,0.35) 15%,
+        rgba(0,0,0,0.70) 35%,
+        rgba(0,0,0,0.90) 55%,
+        #000 75%
     );
 
     mask-image: linear-gradient(
         to right,
         transparent 0%,
-        rgba(0,0,0,0.20) 15%,
-        rgba(0,0,0,0.55) 35%,
-        rgba(0,0,0,0.85) 60%,
-        #000 100%
+        rgba(0,0,0,0.35) 15%,
+        rgba(0,0,0,0.70) 35%,
+        rgba(0,0,0,0.90) 55%,
+        #000 75%
     );
 
-    opacity: 0.90;
+    opacity: 1;
 
-    /* Makes the pale engineering drawing more visible */
-    filter: contrast(1.45);
+    /* Increase visibility of the engineering drawing */
+    filter: contrast(2.2) brightness(0.92);
 
-    /* Allows the pale drawing to interact better with white */
-    mix-blend-mode: multiply;
+    /* IMPORTANT: remove multiply */
+    mix-blend-mode: normal;
 
     pointer-events: none;
     z-index: 0;
