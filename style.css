@@ -267,14 +267,14 @@ img {
 /* =========================
    SERVICES
 ========================= */
-#services {
+  #services {
     position: relative;
     background:
         linear-gradient(
-            rgba(245, 247, 248, 0.94),
-            rgba(245, 247, 248, 0.94)
+            rgba(245, 247, 248, 0.82),
+            rgba(245, 247, 248, 0.82)
         ),
-       url("services-bg.png") center center / cover no-repeat;
+        url("services-bg.png") center center / cover no-repeat;
 }
 .service-grid {
     display: grid;
