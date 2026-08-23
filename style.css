@@ -696,22 +696,20 @@ img {
    FOOTER
 ========================= */
 
-.footer-grid {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    padding: 40px 0;
-    border-bottom: 1px solid #e0e5e8;
-}
-
-.footer-grid div {
+.footer-brand {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    align-items: flex-start;
+    gap: 8px;
 }
 
-.footer-grid span,
-.footer-grid a {
+.footer-brand img {
+    width: 190px;
+    height: auto;
+    display: block;
+}
+
+.footer-brand span {
     font-size: 13px;
     color: #69767e;
 }
