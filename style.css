@@ -483,7 +483,6 @@ img {
     border-color: #dce2e6;
     background: #fafbfc;
 }
-
 /* =========================
    TECHNICAL BACKGROUND
 ========================= */
@@ -530,12 +529,11 @@ img {
 
     opacity: 0.52;
     mix-blend-mode: multiply;
-    filter: contrast(1.5);
+    filter: contrast(1.2);
 
     pointer-events: none;
     z-index: 0;
 }
-
 .standards .container,
 #about .container,
 .meaning .container {
