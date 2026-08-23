@@ -696,6 +696,14 @@ img {
    FOOTER
 ========================= */
 
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 45px 0 35px;
+}
+
 .footer-brand {
     display: flex;
     flex-direction: column;
@@ -704,7 +712,7 @@ img {
 }
 
 .footer-brand img {
-    width: 190px;
+    width: 155px;
     height: auto;
     display: block;
 }
@@ -714,7 +722,41 @@ img {
     color: #69767e;
 }
 
+.footer-contact-block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 9px;
+    font-size: 13px;
+    color: #69767e;
+}
+
+.footer-contact {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+.footer-contact svg {
+    width: 14px !important;
+    height: 14px !important;
+    min-width: 14px !important;
+    min-height: 14px !important;
+    max-width: 14px !important;
+    max-height: 14px !important;
+    flex: 0 0 14px !important;
+    display: inline-block !important;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.footer-contact svg path {
+    fill: currentColor;
+}
+
 .copyright {
+    border-top: 1px solid #dce2e6;
     padding: 19px 0 28px;
     font-size: 11px;
     color: #7a858c;
