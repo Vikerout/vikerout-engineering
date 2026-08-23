@@ -271,8 +271,8 @@ img {
     position: relative;
     background:
         linear-gradient(
-            rgba(245, 247, 248, 0.82),
-            rgba(245, 247, 248, 0.82)
+            rgba(245, 247, 248, 0.50),
+            rgba(245, 247, 248, 0.50)
         ),
         url("services-bg.png") center center / cover no-repeat;
 }
