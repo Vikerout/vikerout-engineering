@@ -448,6 +448,10 @@ img {
 .dark .eyebrow {
     color: #9bcfe5;
 }
+.dark .section-heading h2 {
+    font-size: 30px;
+    line-height: 1.2;
+}
 
 /* =========================
    SOFTWARE / STANDARDS
