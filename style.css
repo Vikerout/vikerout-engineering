@@ -483,13 +483,7 @@ img {
     border-color: #dce2e6;
     background: #fafbfc;
 }
-/* =========================
-   TECHNICAL BACKGROUND
-========================= */
 
-/* =========================
-   TECHNICAL BACKGROUND
-========================= */
 /* =========================
    TECHNICAL BACKGROUND
 ========================= */
@@ -502,23 +496,25 @@ img {
     isolation: isolate;
 }
 
+/* Engineering / CAD drawing watermark */
 .standards::after,
 #about::after,
 .meaning::after {
     content: "";
     position: absolute;
+
     top: 0;
     right: 0;
+    bottom: 0;
 
     width: 620px;
-    height: 100%;
 
     background-image:
         linear-gradient(
             to right,
             rgba(255,255,255,1) 0%,
-            rgba(255,255,255,0.85) 18%,
-            rgba(255,255,255,0.35) 50%,
+            rgba(255,255,255,0.75) 25%,
+            rgba(255,255,255,0.25) 60%,
             rgba(255,255,255,0) 100%
         ),
         url("technical-bg.png");
@@ -533,12 +529,13 @@ img {
 
     background-repeat: no-repeat;
 
-    opacity: 0.45;
+    opacity: 0.55;
 
     pointer-events: none;
     z-index: 0;
 }
 
+/* Keep text above background */
 .standards .container,
 #about .container,
 .meaning .container {
