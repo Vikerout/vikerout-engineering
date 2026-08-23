@@ -217,12 +217,12 @@ img {
 
 .trust-grid div {
     min-width: 0;
-    padding: 18px 26px;
+    padding: 22px 26px;
     border-right: 1px solid #e2e7ea;
     display: grid;
-    grid-template-columns: 1fr 1.35fr;
+    grid-template-columns: 100px minmax(0, 1fr);
     align-items: center;
-    column-gap: 22px;
+    column-gap: 20px;
 }
 .trust-grid div:last-child {
     border-right: 0;
@@ -234,7 +234,9 @@ img {
 }
 
 .trust-grid span {
+    min-width: 0;
     font-size: 12px;
+    line-height: 1.6;
     color: #69767e;
 }
 
@@ -588,11 +590,12 @@ img {
         display: none;
     }
 
-    .service-grid,
-    .cap-grid,
-    .why-grid {
-        grid-template-columns: 1fr 1fr;
-    }
+  .service-grid,
+.cap-grid,
+.why-grid,
+.trust-grid {
+    grid-template-columns: 1fr 1fr;
+}
 
     .two-col {
         grid-template-columns: 1fr;
@@ -641,7 +644,8 @@ img {
     .why-grid,
     .process,
     .software-list,
-    .standard-list {
+    .standard-list,
+    .trust-grid {
         grid-template-columns: 1fr;
     }
 
