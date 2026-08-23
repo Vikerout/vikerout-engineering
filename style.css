@@ -487,6 +487,13 @@ img {
    TECHNICAL BACKGROUND
 ========================= */
 
+/* =========================
+   TECHNICAL BACKGROUND
+========================= */
+/* =========================
+   TECHNICAL BACKGROUND
+========================= */
+
 .standards,
 #about,
 .meaning {
@@ -495,7 +502,6 @@ img {
     isolation: isolate;
 }
 
-/* Engineering drawing / CAD background */
 .standards::after,
 #about::after,
 .meaning::after {
@@ -504,21 +510,35 @@ img {
     top: 0;
     right: 0;
 
-    width: 520px;
+    width: 620px;
     height: 100%;
 
-    background-image: url("technical-bg.png");
-    background-position: right center;
-    background-size: cover;
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(255,255,255,1) 0%,
+            rgba(255,255,255,0.85) 18%,
+            rgba(255,255,255,0.35) 50%,
+            rgba(255,255,255,0) 100%
+        ),
+        url("technical-bg.png");
+
+    background-position:
+        center,
+        right center;
+
+    background-size:
+        cover,
+        cover;
+
     background-repeat: no-repeat;
 
-    opacity: 0.18;
+    opacity: 0.45;
 
     pointer-events: none;
     z-index: 0;
 }
 
-/* Keep all content above the image */
 .standards .container,
 #about .container,
 .meaning .container {
