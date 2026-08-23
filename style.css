@@ -492,49 +492,39 @@ img {
 .meaning {
     position: relative;
     overflow: hidden;
+    isolation: isolate;
 }
 
-/* Subtle engineering drawing */
+/* Engineering drawing / CAD background */
 .standards::after,
 #about::after,
 .meaning::after {
     content: "";
     position: absolute;
-    right: 0;
     top: 0;
+    right: 0;
+
     width: 520px;
     height: 100%;
-    background: url("technical-bg.png") right center / cover no-repeat;
 
-    opacity: 0.10;
+    background-image: url("technical-bg.png");
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
-    -webkit-mask-image: linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(0,0,0,0.15) 25%,
-        rgba(0,0,0,0.45) 60%,
-        #000 100%
-    );
-
-    mask-image: linear-gradient(
-        to right,
-        transparent 0%,
-        rgba(0,0,0,0.15) 25%,
-        rgba(0,0,0,0.45) 60%,
-        #000 100%
-    );
+    opacity: 0.18;
 
     pointer-events: none;
     z-index: 0;
 }
 
+/* Keep all content above the image */
 .standards .container,
 #about .container,
 .meaning .container {
     position: relative;
     z-index: 1;
 }
-
 /* =========================
    EXPERIENCE
 ========================= */
