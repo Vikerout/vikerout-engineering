@@ -609,32 +609,47 @@ img {
     position: absolute;
 
     top: 0;
-    right: -70px;
+    right: 0;
 
-    width: 62%;
+    width: 55%;
     height: 100%;
 
     background-image: url("pid-background.png");
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: right center;
     background-size: cover;
 
-    opacity: 0.11;
+    opacity: 0.12;
 
     pointer-events: none;
     z-index: 0;
 }
 
-/* Keep all website content above the drawing */
+/* Keep content above drawing */
 .why .container {
     position: relative;
     z-index: 2;
 }
 
-.why .section-heading,
+/* Heading */
+.why .section-heading {
+    position: relative;
+    z-index: 3;
+    max-width: 760px;
+}
+
+/* Cards */
 .why .why-grid {
     position: relative;
     z-index: 3;
+
+    width: 100%;
+    max-width: 1045px;
+}
+
+/* Cards */
+.why-grid > div {
+    background: rgba(255, 255, 255, 0.94);
 }
 /* =========================
    CONTACT
