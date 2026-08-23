@@ -521,7 +521,44 @@ img {
     position: relative;
     z-index: 2;
 }
+/* =========================
+   EXPERIENCE
+========================= */
 
+.experience {
+    background: #ffffff;
+}
+
+.experience-copy {
+    border-top: 1px solid #dce2e6;
+}
+
+.exp-row {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: baseline;
+    gap: 16px;
+    padding: 5px 0;
+}
+
+.exp-row b {
+    font-size: 15px;
+    font-weight: 750;
+    color: #18242d;
+}
+
+.exp-row span {
+    color: #52616b;
+    font-size: 14px;
+}
+
+.experience-copy > p {
+    color: #66737c;
+    margin-top: 25px;
+    font-size: 14px;
+    line-height: 1.65;
+    max-width: 620px;
+}
 /* =========================
    PROCESS
 ========================= */
@@ -745,10 +782,10 @@ img {
         gap: 5px;
     }
 
-    .exp-row {
-        flex-direction: column;
-        gap: 4px;
-    }
+   .exp-row {
+    grid-template-columns: 1fr;
+    gap: 2px;
+}
 
     .footer-grid {
         flex-direction: column;
