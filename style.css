@@ -843,3 +843,30 @@ img {
         padding: 65px 0;
     }
 }
+/* =========================
+   FOOTER CONTACT ICONS
+========================= */
+
+.footer-contact {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+.footer-contact svg {
+    width: 14px !important;
+    height: 14px !important;
+    min-width: 14px !important;
+    min-height: 14px !important;
+    max-width: 14px !important;
+    max-height: 14px !important;
+    flex: 0 0 14px !important;
+    display: inline-block !important;
+    fill: currentColor;
+    overflow: hidden;
+}
+
+.footer-contact svg path {
+    fill: currentColor;
+}
