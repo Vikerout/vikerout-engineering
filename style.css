@@ -509,7 +509,7 @@ img {
 
     background: url("./technical-bg.png") center center / cover no-repeat;
 
-    opacity: 0.75;
+    opacity: 0.95;
 
     pointer-events: none;
     z-index: 0;
