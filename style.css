@@ -139,6 +139,7 @@ img {
     text-transform: uppercase;
     color: #0a668f;
     margin: 0 0 15px;
+    transform: translateX(-25px);
 }
 
 .hero .eyebrow {
