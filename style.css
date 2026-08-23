@@ -60,15 +60,12 @@ img {
 }
 
 .brand img {
-    width: 260px;
-    height: auto;
+    height: 58px;
+    width: auto;
     display: block;
 }
 
-.brand span,
-.brand small {
-    display: none;
-}
+
 
 .nav nav {
     display: flex;
@@ -109,7 +106,7 @@ img {
 .hero-image {
     position: absolute;
     inset: 0;
-    background: url("images/vikerout-home.png") center center / cover no-repeat;
+    background: url("vikerout-home.png") center center / cover no-repeat;
 }
 
 .hero-overlay {
@@ -627,8 +624,8 @@ img {
 }
 
 .brand img {
-    width: 200px;
-    height: auto;
+    height: 52px;
+    width: auto;
 }
 
     .service-grid,
