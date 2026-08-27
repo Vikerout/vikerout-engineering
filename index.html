@@ -7,25 +7,7 @@
 <meta name="description" content="VIKEROUT Engineering provides project-based piping and plant detail engineering support to clients, EPC contractors and engineering companies worldwide.">
 <link rel="stylesheet" href="style.css">
 </head>
-  <script>
-const menuToggle = document.querySelector(".menu-toggle");
-const mobileNav = document.querySelector(".mobile-nav");
-
-menuToggle.addEventListener("click", function () {
-    const isOpen = mobileNav.classList.toggle("active");
-
-    menuToggle.classList.toggle("active", isOpen);
-    menuToggle.setAttribute("aria-expanded", isOpen);
-});
-
-document.querySelectorAll(".mobile-nav a").forEach(link => {
-    link.addEventListener("click", function () {
-        mobileNav.classList.remove("active");
-        menuToggle.classList.remove("active");
-        menuToggle.setAttribute("aria-expanded", "false");
-    });
-});
-</script>
+ 
 <body>
 <header class="header">
   <div class="container nav">
@@ -371,3 +353,31 @@ document.querySelectorAll(".mobile-nav a").forEach(link => {
     © 2026 VIKEROUT Engineering. All rights reserved.
   </div>
 </footer>
+<script>
+const menuToggle = document.querySelector(".menu-toggle");
+const mobileNav = document.querySelector(".mobile-nav");
+
+menuToggle.addEventListener("click", function () {
+    const isOpen = mobileNav.classList.toggle("active");
+
+    menuToggle.classList.toggle("active", isOpen);
+    menuToggle.setAttribute("aria-expanded", isOpen);
+
+    menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close menu" : "Open menu"
+    );
+});
+
+document.querySelectorAll(".mobile-nav a").forEach(link => {
+    link.addEventListener("click", function () {
+        mobileNav.classList.remove("active");
+        menuToggle.classList.remove("active");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open menu");
+    });
+});
+</script>
+
+</body>
+</html>
