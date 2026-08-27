@@ -1151,3 +1151,109 @@ img {
 .footer-contact svg path {
     fill: currentColor;
 }
+/* =========================
+   MOBILE NAVIGATION
+========================= */
+
+.menu-toggle {
+    display: none;
+    width: 42px;
+    height: 42px;
+    padding: 9px;
+    border: 1px solid #dce2e6;
+    background: #ffffff;
+    cursor: pointer;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #18242d;
+    transition: all 0.25s ease;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+
+/* =========================
+   MOBILE MENU
+========================= */
+
+@media (max-width: 900px) {
+
+    .desktop-nav {
+        display: none !important;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .mobile-nav {
+        position: absolute;
+        top: 74px;
+        left: 0;
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        background: rgba(255, 255, 255, 0.98);
+        border-bottom: 1px solid #dce2e6;
+
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-8px);
+
+        transition:
+            opacity 0.2s ease,
+            transform 0.2s ease,
+            visibility 0.2s ease;
+
+        box-shadow: 0 8px 20px rgba(20, 40, 55, 0.08);
+    }
+
+    .mobile-nav.active {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .mobile-nav a {
+        padding: 16px 5%;
+        border-top: 1px solid #edf0f2;
+
+        font-size: 13px;
+        font-weight: 700;
+        color: #4d5b64;
+    }
+
+    .mobile-nav a:hover {
+        color: #075e88;
+        background: #f5f7f8;
+    }
+
+    .mobile-nav a:last-child {
+        color: #0a5f88;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+}
