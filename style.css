@@ -522,41 +522,197 @@ img {
     z-index: 2;
 }
 /* =========================
-   EXPERIENCE
+   PROJECT EXPERIENCE
 ========================= */
 
-.experience {
+.project-experience {
     background: #ffffff;
+    padding: 86px 0 92px;
 }
 
-.experience-copy {
-    border-top: 1px solid #dce2e6;
-}
-
-.exp-row {
+.project-experience-grid {
     display: grid;
-    grid-template-columns: 150px 1fr;
-    align-items: baseline;
-    gap: 20px;
-    padding: 5px 0;
+    grid-template-columns: 0.78fr 1.22fr;
+    gap: 55px;
+    align-items: start;
 }
-.exp-row b {
-    font-size: 15px;
-    font-weight: 750;
+
+/* LEFT SIDE */
+
+.project-intro {
+    padding-top: 4px;
+}
+
+.project-intro .eyebrow {
+    margin-bottom: 28px;
+}
+
+.project-intro h2 {
+    max-width: 570px;
+    margin: 0;
+    font-size: clamp(32px, 3.2vw, 43px);
+    line-height: 1.28;
+    letter-spacing: -0.025em;
+    font-weight: 800;
     color: #18242d;
 }
 
-.exp-row span {
-    color: #52616b;
-    font-size: 14px;
+.project-line {
+    width: 90px;
+    height: 3px;
+    background: #0a638d;
+    margin-top: 36px;
 }
 
-.experience-copy > p {
-    color: #66737c;
-    margin-top: 25px;
-    font-size: 14px;
-    line-height: 1.65;
-    max-width: 620px;
+/* RIGHT SIDE */
+
+.project-exposure-heading {
+    border-top: 1px solid #d5dde2;
+    padding-top: 8px;
+    margin-bottom: 25px;
+}
+
+.project-exposure-heading span {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.10em;
+    color: #52616b;
+}
+
+/* PROJECT CARDS */
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+.project-card {
+    min-height: 166px;
+    padding: 23px 25px 18px;
+    background: #ffffff;
+    border: 1px solid #e0e6e9;
+    border-radius: 9px;
+
+    box-shadow:
+        0 3px 12px rgba(20, 40, 55, 0.06);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 22px rgba(20, 40, 55, 0.10);
+}
+
+.project-logo {
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.project-logo img {
+    max-width: 175px;
+    max-height: 68px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+/* LOCATION */
+
+.project-location {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    font-size: 13px;
+    line-height: 1.4;
+    color: #394953;
+}
+
+.location-icon {
+    width: 15px;
+    height: 15px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 9px;
+    color: #52616b;
+}
+
+/* =========================
+   PROJECT EXPERIENCE
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .project-experience-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .project-intro h2 {
+        max-width: 700px;
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* =========================
+   PROJECT EXPERIENCE
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    .project-experience {
+        padding: 70px 0;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+    }
+
+    .project-card {
+        min-height: 150px;
+        padding: 19px;
+    }
+
+    .project-logo {
+        height: 68px;
+    }
+
+    .project-logo img {
+        max-width: 145px;
+        max-height: 58px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        min-height: 145px;
+    }
 }
 /* =========================
    PROCESS
