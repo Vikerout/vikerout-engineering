@@ -589,13 +589,12 @@ img {
 
 .project-card {
     min-height: 166px;
-    padding: 23px 25px 18px;
+    padding: 20px 23px 18px;
     background: #ffffff;
     border: 1px solid #e0e6e9;
     border-radius: 9px;
 
-    box-shadow:
-        0 3px 12px rgba(20, 40, 55, 0.06);
+    box-shadow: 0 3px 12px rgba(20, 40, 55, 0.06);
 
     display: flex;
     flex-direction: column;
@@ -608,24 +607,73 @@ img {
 
 .project-card:hover {
     transform: translateY(-3px);
-
-    box-shadow:
-        0 8px 22px rgba(20, 40, 55, 0.10);
+    box-shadow: 0 8px 22px rgba(20, 40, 55, 0.10);
 }
 
+/* LOGO AREA */
+
 .project-logo {
-    height: 78px;
+    height: 82px;
+    width: 100%;
+
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .project-logo img {
-    max-width: 175px;
-    max-height: 68px;
     width: auto;
     height: auto;
+    max-width: 175px;
+    max-height: 62px;
     object-fit: contain;
+}
+
+/* Individual logo adjustments */
+
+.project-card:nth-child(1) .project-logo img {
+    max-width: 160px;
+    max-height: 58px;
+}
+
+.project-card:nth-child(2) .project-logo img {
+    max-width: 165px;
+    max-height: 58px;
+}
+
+.project-card:nth-child(3) .project-logo img {
+    max-width: 155px;
+    max-height: 62px;
+}
+
+.project-card:nth-child(4) .project-logo img {
+    max-width: 100px;
+    max-height: 65px;
+}
+
+.project-card:nth-child(5) .project-logo img {
+    max-width: 165px;
+    max-height: 58px;
+}
+
+.project-card:nth-child(6) .project-logo img {
+    max-width: 165px;
+    max-height: 58px;
+}
+
+.project-card:nth-child(7) .project-logo img {
+    max-width: 150px;
+    max-height: 62px;
+}
+
+.project-card:nth-child(8) .project-logo img {
+    max-width: 150px;
+    max-height: 62px;
+}
+
+.project-card:nth-child(9) .project-logo img {
+    max-width: 155px;
+    max-height: 58px;
 }
 
 /* LOCATION */
@@ -640,16 +688,52 @@ img {
     color: #394953;
 }
 
+/* Real map-pin icon */
+
 .location-icon {
-    width: 15px;
-    height: 15px;
+    position: relative;
 
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    width: 13px;
+    height: 16px;
 
-    font-size: 9px;
-    color: #52616b;
+    display: inline-block;
+    flex: 0 0 13px;
+
+    background: #52616b;
+    border-radius: 8px 8px 8px 8px;
+
+    transform: scale(0.75);
+}
+
+.location-icon::before {
+    content: "";
+
+    position: absolute;
+    width: 5px;
+    height: 5px;
+
+    background: #ffffff;
+    border-radius: 50%;
+
+    top: 4px;
+    left: 4px;
+}
+
+.location-icon::after {
+    content: "";
+
+    position: absolute;
+
+    width: 7px;
+    height: 7px;
+
+    background: #52616b;
+
+    left: 3px;
+    bottom: -2px;
+
+    transform: rotate(45deg);
+    z-index: -1;
 }
 
 /* =========================
@@ -691,7 +775,7 @@ img {
 
     .project-card {
         min-height: 150px;
-        padding: 19px;
+        padding: 18px;
     }
 
     .project-logo {
@@ -700,7 +784,7 @@ img {
 
     .project-logo img {
         max-width: 145px;
-        max-height: 58px;
+        max-height: 55px;
     }
 }
 
