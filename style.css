@@ -961,7 +961,7 @@ img {
 @media (max-width: 560px) {
 
     .container {
-        width: 180%;
+        width: 90%;
     }
 
     .header {
